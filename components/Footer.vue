@@ -1,19 +1,15 @@
 <template>
-  <footer class="bg-gray-800 text-white p-6 mt-auto shadow-inner">
+  <footer class="bg-gray-500 text-white p-6 mt-auto shadow-inner w-full">
     <div class="container mx-auto text-center text-sm">
-     
-      <p class="mt-2">
-        NT HRD TEAM 😎
-       
-      </p>
+      <p class="mt-2">NT HRD TEAM 😎</p>
     </div>
   </footer>
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const currentYear = ref(new Date().getFullYear());
+const currentYear = ref(new Date().getFullYear())
 </script>
 
 <style scoped>

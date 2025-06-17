@@ -1,36 +1,25 @@
 <template>
-  <header class="bg-gray-800 text-white p-4 shadow-md">
-    <div class="container mx-auto flex justify-between items-center">
-      <NuxtLink to="/" class="text-2xl font-bold text-white hover:text-blue-300 transition-colors duration-300">
-        My Awesome Nuxt App
+  <header class="bg-gradient-to-r from-blue-700 via-purple-700 to-pink-500 text-white shadow-lg py-4 w-full">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <NuxtLink to="/" class="flex items-center text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 via-pink-300 to-blue-300 hover:scale-105 transition-transform duration-300 whitespace-nowrap">
+        <span>My Awesome Nuxt App</span>
+        <!-- ใส่ Icon ตรงนี้ -->
       </NuxtLink>
-      <nav>
-        <ul class="flex space-x-6">
-          <li>
-            <NuxtLink to="/" class="text-white hover:text-blue-300 transition-colors duration-300">
-              หน้าหลัก
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/about" class="text-white hover:text-blue-300 transition-colors duration-300">
-              เกี่ยวกับเรา
-            </NuxtLink>
-          </li>
-          <li>
-            <NuxtLink to="/contact" class="text-white hover:text-blue-300 transition-colors duration-300">
-              ติดต่อ
-            </NuxtLink>
-          </li>
-        </ul>
-      </nav>
+      <Navbar />
     </div>
   </header>
 </template>
 
 <script setup>
-// ไม่มี logic เฉพาะสำหรับ Header ในตอนนี้
+import Navbar from '~/components/Navbar.vue'
 </script>
 
 <style scoped>
-/* คุณสามารถเพิ่ม style เฉพาะสำหรับ Header ที่นี่ได้ */
+header {
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+a.text-2xl:hover {
+  filter: brightness(1.2);
+}
 </style>

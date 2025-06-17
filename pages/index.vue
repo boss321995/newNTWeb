@@ -31,5 +31,15 @@
 /* สำคัญมาก: กำหนดขนาด background ให้ใหญ่กว่า 100% เพื่อให้มีพื้นที่สำหรับ gradient ในการเลื่อน */
 h1 {
   background-size: 200% auto; /* 200% หมายถึง background กว้างเป็นสองเท่าของ element */
+  animation: text-gradient-move 3s linear infinite;
+}
+
+@keyframes text-gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 </style>
